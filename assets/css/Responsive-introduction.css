@@ -1,0 +1,58 @@
+/* Tablet & mobile */
+@media (max-width: 991.98px) {
+  /* LHU DNA */
+  .lhu-dna__btn-list {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 20px;
+  }
+  /* Ban lãnh đạo */
+  .bld-lhu {
+    margin-top: 60px;
+  }
+  .bld__list {
+    flex-direction: column;
+  }
+  .bld__item {
+    width: 100%;
+  }
+  .lhu-bot {
+    margin-top: 50px;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 30px;
+  }
+  /* Quá trình phát triển */
+  .quatrinh {
+    clip-path: polygon(0 0, 50% 3%, 100% 0, 100% 100%, 0 100%);
+    padding-bottom: 70px;
+  }
+  .quatrinh__heading {
+    padding-top: 110px;
+    font-size: 32.4px;
+  }
+  .quatrinh__list {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 30px;
+  }
+  .quatrinh__item {
+    margin-bottom: 0px;
+  }
+  /* Tham quan LHU-360 virtual tour*/
+  .thamquan__heading {
+    font-size: 32px;
+  }
+  .thamquan__lhu-list {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 25px;
+  }
+  .thamquan__bot {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 30px;
+  }
+  /* Hệ thống bằng cấp */
+  .hethong {
+    margin-top: 70px;
+  }
+  .hethong__list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

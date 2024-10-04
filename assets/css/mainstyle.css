@@ -1,0 +1,694 @@
+* {
+  margin: 0; /* Đặt tất cả các phần tử về margin bằng 0 để loại bỏ khoảng trống mặc định */
+  padding: 0; /* Đặt tất cả các phần tử về padding bằng 0 để loại bỏ khoảng đệm mặc định */
+  box-sizing: border-box; /* Thiết lập box-sizing để bao gồm padding và border trong kích thước tổng thể của phần tử */
+}
+
+body {
+  overflow-y: auto; /* Cho phép cuộn theo chiều dọc nếu nội dung vượt quá chiều cao của viewport */
+  display: flex; /* Sử dụng Flexbox để dễ dàng bố trí các phần tử con */
+  flex-direction: column; /* Sắp xếp các phần tử con theo chiều dọc */
+  min-height: 100vh; /* Đặt chiều cao tối thiểu của body bằng 100% chiều cao viewport để đảm bảo không gian đầy đủ cho các phần tử bên trong */
+}
+
+html {
+  font-family: "Times New Roman", Times, serif;
+}
+/* Cố định Header */
+header {
+  position: fixed; /* Cố định vị trí */
+  top: 0; /* Cách đầu trang 0px */
+  left: 0; /* Cách bên trái 0px */
+  width: 100%; /* Chiều rộng 100% */
+  background-color: white; /* Nền trắng */
+  z-index: 1000; /* Đảm bảo Header nằm trên cùng */
+}
+
+main {
+  margin-top: 270px; /* Cung cấp khoảng cách từ Header và Nav */
+  flex: 1; /* Tự động mở rộng để lấp đầy khoảng trống */
+}
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+/* ------Header------ */
+.Header {
+  padding-top: 20px;
+  background-color: rgb(40, 79, 158);
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.Header a {
+  text-decoration: none; /* Bỏ gạch chân mặc định */
+  padding-bottom: 5px;
+}
+.Header a:hover {
+  border-bottom: 3px solid #fff; /* Gạch chân khi hover */
+  color: #fff; /* Màu chữ khi hover (tùy chỉnh theo ý bạn) */
+  transition: border-bottom 0.3s ease; /* Hiệu ứng mượt khi hover */
+}
+.HeaderLeft {
+  margin-bottom: 8px;
+}
+
+.HeaderLeft a {
+  color: #fff;
+  font-weight: 400;
+  font-size: 14.5px;
+  font-weight: 100; /* Làm chữ mỏng hơn */
+  margin-right: 20px;
+}
+.HeaderRight {
+  color: #fff;
+  margin-left: 20px;
+  /* margin-right: 270px; Màn 24.5 */
+  margin-right: 80px;
+  margin-bottom: 8px;
+}
+.HeaderRight a {
+  color: #fff;
+  font-size: 14.5px;
+  margin-right: 20px;
+}
+.HeaderRight a img {
+  height: 25px;
+
+  align-items: center;
+  margin-right: 10px;
+  /* padding-top: 10px; */
+}
+/*------ Nav ----------*/
+.Nav {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.NavLeft a img {
+  height: 115px;
+  margin-left: 20px;
+}
+
+.NavRight {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.NavRight img {
+  height: 60px;
+}
+
+.NavRight a {
+  color: #000;
+  text-decoration: none; /* Bỏ gạch chân mặc định */
+  padding-bottom: 5px;
+  margin-right: 30px;
+  font-weight: 500;
+}
+.NavRight a:hover {
+  border-bottom: 3px solid #000000; /* Gạch chân khi hover */
+  color: #000; /* Màu chữ khi hover (tùy chỉnh theo ý bạn) */
+  transition: border-bottom 0.3s ease; /* Hiệu ứng mượt khi hover */
+}
+
+/* -------Footer */
+footer {
+  margin-top: 60px;
+}
+/* --------Conect--------------- */
+
+.ConectFooter {
+  margin-bottom: 60px;
+}
+.TitleConectFoo {
+  margin-bottom: 60px;
+}
+.TitleConectFoo a {
+  color: rgb(39, 78, 157);
+  text-decoration: none;
+}
+
+.TitleConectFoo .Title {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 44px;
+  padding-right: 100px;
+}
+.ConectFooter .Icon {
+  font-size: 30px;
+}
+/* ContentConect */
+
+.ListConectFoo {
+  display: flex;
+  justify-content: space-between;
+}
+.ListConect {
+  width: 25%;
+}
+.ListConect p {
+  color: rgb(39, 78, 157);
+}
+
+.ListConect p:hover {
+  cursor: pointer;
+  text-decoration: underline dotted #000;
+}
+
+/* --------------Contact------------ */
+.ContactFooter {
+  background-color: rgb(40, 79, 158);
+}
+.Foo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+.Foo a img {
+  height: 130px;
+  margin-right: 15px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.FooterInfo {
+  color: #fff;
+  font-size: 16px;
+}
+
+.FooterData a,
+i {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+.LogoMe {
+  width: 60px;
+  height: 60px;
+  margin-left: 80px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.LogoMe img {
+  border-radius: 15px; /* Bo tròn 4 góc với bán kính 15px */
+}
+
+.AppStore {
+  margin-top: 40px;
+  margin-left: 60px;
+}
+
+/* Main Css */
+
+.MisstionFrom {
+  margin-top: 60px;
+  display: flex;
+  gap: 20px; /* Khoản cách giữa 2 cột */
+  line-height: 1.6; /* Điều chỉnh khoảng cách dòng */
+}
+.Misstion {
+  width: 50%;
+  text-align: justify;
+}
+
+.MisstionFrom h2 {
+  font-size: 27px;
+  font-weight: 700;
+  color: rgb(19, 75, 172);
+}
+.MisstionFrom p {
+  font-size: 20.7px;
+}
+.MisstionFrom i {
+  color: rgb(19, 75, 172);
+}
+
+/* new */
+
+.NewFrom {
+  background-color: rgb(244, 244, 244);
+  /* min-height: 200px;  */
+  /* Thay đổi từ height thành min-height */
+}
+.TitleNew {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.TitleNew h2 {
+  color: rgb(172, 178, 178);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+.TitleNew p {
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+
+.New {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px; /* khoảng cách giữa NewLeft1 và NewRight1 */
+  margin-bottom: 50px;
+}
+
+.NewLarge {
+  position: relative; /* đặt làm gốc để văn bản có thể chồng lên ảnh */
+  width: 50%;
+}
+
+.NewLarge img {
+  width: 100%;
+  height: 350px; /* hiện thị ảnh theo tỉ lệ chiều rộng của hình ảnh */
+}
+
+.TitleNewlagre {
+  /* margin-top: 10px; */
+  position: absolute;
+  bottom: 0; /* Đặt văn bản nằm ở dưới cùng */
+  left: 0;
+  width: 100%; /* Đảm bảo văn bản chiếm toàn bộ chiều ngang của hình ảnh */
+  margin: 0;
+  padding: 10px;
+  color: white; /* Màu chữ trắng để tương phản với nền */
+  text-align: left;
+  font-size: 23px;
+  font-weight: 600;
+  text-decoration: none;
+}
+/* Hover Left*/
+.TitleNewlagre:hover {
+  text-decoration: underline dotted;
+  color: #ffffff; /* Màu chữ khi hover (tùy chỉnh theo ý bạn) */
+}
+
+.NewSmall {
+  display: flex;
+  /* flex-direction: column; */
+  width: 50%;
+  gap: 20px; /* Khoảng cách giữa các RightItem */
+}
+
+.Item {
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+}
+
+.Item img {
+  width: 100%;
+  height: 200px;
+}
+
+.Item p {
+  margin-top: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.Item p:hover {
+  cursor: pointer;
+  text-decoration: underline dotted #000;
+
+  color: #2702ce; /* Màu chữ khi hover (tùy chỉnh theo ý bạn) */
+}
+
+.BtnNew {
+  text-align: center;
+  margin-top: 70px;
+  padding-bottom: 100px;
+}
+.BtnNew button {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: #2702ce;
+  color: #ffffff;
+  font-weight: 500;
+  border: none;
+}
+.BtnNew button:hover {
+  text-decoration: underline #ffffff;
+}
+/* =============Admission======== */
+.Admission {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.TitleAdmiss {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.TitleAdmiss h2 {
+  color: rgb(169, 170, 172);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 44px;
+}
+.TitleAdmiss p {
+  font-size: 23px;
+}
+.ListAddmiss {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.TS {
+  width: 20%;
+  text-align: center;
+}
+.TS a {
+  display: inline-block;
+  background-color: rgb(197, 220, 252);
+  padding: 60px;
+  border-radius: 50%;
+}
+.TS a:hover {
+  opacity: 0.7;
+}
+.TS a i {
+  font-size: 70px;
+}
+.TSnumber {
+  color: rgb(238, 185, 53);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 64px;
+}
+.TStitle {
+  color: #19598a;
+  font-weight: 700;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+/* ========Quanlity========= */
+.Quanlity {
+  position: relative;
+}
+.BgQuanlity {
+  height: 100%;
+  background-image: url("https://dean1665.vn/uploads/school/dh-lac-hong.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+  height: 900px;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: #0742c1;
+  opacity: 0.7; /* Độ trong suốt của lớp phủ */
+}
+.Quanlity-Content {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+/*  */
+.Quanlity-left {
+  width: 60%;
+}
+.content {
+  display: flex;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+.imgcontent {
+  width: 40%;
+  margin-bottom: 20px;
+}
+.imgcontent img {
+  height: 200px;
+}
+.titlecontent {
+  margin-left: 10px;
+  width: 60%;
+}
+.titlecontent h5 {
+  color: rgb(234, 192, 58);
+}
+.titlecontent p {
+  color: #fff;
+  font-size: 16px;
+}
+.imgcontent a img {
+  width: 100%;
+}
+
+/* Right */
+.Quanlity-right {
+  width: 40%;
+
+  height: 900px;
+  background-color: rgb(234, 192, 58);
+}
+
+.info h2 {
+  margin-top: 50px;
+  padding-left: 60px;
+  padding-right: 60px;
+  color: #2702ce;
+  font-weight: 700;
+  font-size: 100px;
+  text-align: center;
+}
+.info p {
+  padding-left: 140px;
+  padding-right: 140px;
+
+  color: #2702ce;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+}
+.info a {
+  margin-left: 25px;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+}
+/* event */
+/* Thêm đổ bóng cho .content-event */
+.content-event {
+  display: flex; /* Sử dụng Flexbox để căn chỉnh các phần tử ngang hàng */
+  justify-content: space-between; /* Tạo khoảng cách đều giữa các phần tử */
+  gap: 20px; /* Khoảng cách giữa các event-item */
+
+  padding: 20px;
+}
+
+/* Đổ bóng cho .item1 và căn chỉnh */
+.item1 {
+  padding: 30px;
+  margin-left: 10px;
+  margin-top: 10px;
+  background-color: rgb(238, 185, 53);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+  text-align: center;
+  font-size: 22px;
+}
+
+/* Tạo đường gạch ngang giữa 2 thẻ */
+
+.event-item {
+  margin-right: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+}
+.btnevent :hover {
+  text-decoration: underline dotted #fff;
+}
+.item2 :hover {
+  text-decoration: underline dotted #000;
+  cursor: pointer;
+}
+/* Work  */
+.work {
+  background-color: rgb(244, 244, 244);
+}
+.content-work {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-around;
+}
+.work-item {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.work-img:hover {
+  text-decoration: underline dotted #000;
+  color: #19598a;
+}
+/* education */
+.Edunumber {
+  margin-top: 30px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #064a7e;
+}
+.TS .Edunumber :hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.ListEdu {
+  display: flex;
+  justify-content: space-around;
+}
+.TS .bga {
+  display: inline-block;
+  background-color: rgba(255, 183, 0, 0.863);
+  padding: 60px;
+  border-radius: 50%;
+}
+.bga:hover {
+  opacity: 0.7;
+}
+/* Media ------------------ */
+.media {
+  margin-top: 100px;
+  position: relative;
+}
+.media-content {
+  width: 40%;
+  background-color: rgb(40, 79, 158);
+}
+.media-content h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 34px;
+  color: rgba(255, 183, 0, 0.863);
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+.media-content a {
+  color: #fff;
+  font-size: 20px;
+  display: block;
+  text-decoration: none;
+  margin-top: 5px;
+}
+.media-item {
+  margin-left: 50px;
+}
+.btn-media {
+  padding-bottom: 150px;
+}
+.media-item button {
+  padding: 10px 50px 10px 50px;
+  color: #fff;
+  background-color: rgba(255, 183, 0, 0.863);
+  border: none;
+  margin-top: 80px;
+}
+
+.media-video {
+  background-color: #fff;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin-top: 50px;
+  margin-left: 350px;
+
+  display: flex;
+}
+.video-item {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  margin-right: 30px;
+}
+.video-item a img {
+  width: 100%;
+  height: 270px;
+}
+.video-item p {
+  padding-top: 30px;
+  margin-left: 10px;
+  padding-bottom: 30px;
+}
+.video-item p:hover {
+  color: #2702ce;
+  text-decoration: underline dotted #000;
+}
+
+
+/* imprintLhu-------------- */
+.imprintLhu {
+  background-image: url("https://lhu.edu.vn/ViewPage/LHUVNB4/@HomePage/_images/nen.png");
+  background-size: cover; /* Đảm bảo hình nền lấp đầy toàn bộ vùng chứa */
+  background-position: center center; /* Đặt hình ảnh vào giữa cả theo chiều dọc và ngang */
+  background-repeat: no-repeat; /* Ngăn hình nền lặp lại */
+  width: 100%;
+  min-height: 100vh; /* Đảm bảo chiều cao tối thiểu là 100% của viewport */
+  display: flex; /* Đảm bảo nội dung bên trong hiển thị theo flex */
+  flex-direction: column; /* Đặt hướng của flex theo cột */
+  justify-content: center; /* Căn giữa nội dung theo chiều dọc */
+  align-items: center; /* Căn giữa nội dung theo chiều ngang */
+}
+.title-imp {
+  text-align: center;
+  padding-bottom: 50px;
+}
+.content-imp {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.title-imp h4 {
+  color: rgb(182, 172, 162);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 50px;
+  padding-top: 50px;
+}
+.title-imp p {
+  font-size: 24px;
+}
+.imp-item {
+  background-color: rgb(244, 244, 244);
+  width: 23%;
+  border-radius: 5%;
+  text-align: center;
+  margin-left: 20px;
+   
+}
+.imp-item img {
+  width: 100%;
+  padding: 15px;
+  border-radius: 7%;
+}
+.imp-item p {
+  text-transform: uppercase;
+  color: #064a7e;
+  font-weight: 600;
+  font-size: 18px;
+  padding-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.btn-imp button:hover {
+  text-decoration: underline dotted #fff;
+}
+/* Background==================== */
+.bglhu {
+  margin-top: 100px;
+  background-image: url("https://lhu.edu.vn/ViewPage/LHUVNB4/@HomePage/_images/Banner360.jpg");
+  background-size: contain; /* Đảm bảo hình nền lấp đầy toàn bộ vùng chứa */
+  background-position: center; /* Đặt hình ảnh vào giữa */
+  background-repeat: no-repeat; /* Ngăn hình nền lặp lại */
+  width: 100%;
+  height: 80vh; /* Chiều cao bằng 100% chiều cao của viewport (màn hình hiển thị) */
+  position: relative;
+}

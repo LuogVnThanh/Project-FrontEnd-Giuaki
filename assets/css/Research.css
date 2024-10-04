@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+/*----Image----*/
+.main-content {
+  text-align: center;
+  padding: 0px 40px;
+  /* background-color: #2a2885; Background màu xanh đậm */
+  color: #fff;
+}
+
+.image-container {
+  margin-bottom: 20px;
+}
+
+.image-container img {
+  width: 100%;
+  /* max-width: 1200px; */
+  /* border-radius: 15px; */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* content-left */
+.content {
+  /* display: flex; */
+  margin-bottom: 80px;
+  margin-right: 0 !important;
+}
+
+.content-left {
+  margin-right: 30px;
+  width: 50%;
+
+}
+
+.content-left p {
+  font-size: 16px;
+}
+
+.content-left a,
+p {
+  color: #000;
+}
+
+.content-left img {
+  width: 100%;
+}
+
+/* content right */
+.content-right {
+
+  width: 50%;
+}
+
+.item-right {
+  display: flex;
+  /* background-color: yellow; */
+  margin-bottom: 15px;
+}
+
+.img-item {
+  width: 40%;
+
+}
+
+.img-item img {
+  width: 100%;
+  height: 100%;
+}
+
+.title-item {
+  width: 60%;
+  background-color: rgb(247, 219, 8);
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+
+.abc {
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.abc:hover {
+  text-decoration: underline dotted #000;
+}
+
+.heder {
+  text-transform: uppercase;
+  font-size: 2.5em;
+  padding: 50px 0;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #284F9E;
+}
+
+.p {
+  line-height: 1.5em;
+}
+
+/* -------Nguyên cứu khoa học--------- */
+.containers {
+  max-width: 1400px;
+  margin: auto;
+
+}
+
+.contents {
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  color: black;
+  margin-bottom: 80px;
+}
+
+.hd {
+  background-color: #F9C74F;
+  padding: 10px;
+  text-align: left;
+  font-size: 24px;
+  margin-left: -120px;
+  margin-bottom: 20px;
+}
+
+.hd a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.text-section {
+  flex: 1;
+  background-color: #1F3C88;
+  color: white;
+  padding: 30px;
+  box-sizing: border-box;
+  padding-bottom: 150px;
+  border-radius: 140px 0 0 0;
+}
+
+.text-section p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  border-left: 4px solid #fff;
+  padding-left: 20px;
+  color: #fff;
+  text-align: left;
+}
+
+.text-section .btn {
+  display: inline-block;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 5px;
+  margin-left: -250px;
+}
+
+.image-section1 {
+  flex: 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+  padding: 10px 0px 10px 30px;
+  box-sizing: border-box;
+}
+
+.image-section2 {
+  flex: 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+  padding-right: 30px;
+  box-sizing: border-box;
+}
+
+.image-section1 img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.image-section2 img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.bt {
+  font-size: 16px;
+  text-align: left;
+  line-height: 1.8;
+  padding-left: 0px;
+  color: #F9C74F;
+  list-style: none;
+}
+
+.bt li a {
+  color: yellow;
+  text-decoration: none;
+  transition: text-decoration 0.3s ease;
+}
+
+.bt li a:hover {
+  text-decoration: underline dotted #F9C74F;
+  /* text-transform: uppercase; Viết in hoa */
+}
+
+/* -------ROBOCON---------- */
+.rbcontainers {
+  max-width: 1500px;
+  margin: auto;
+  background-color: #1F3C88;
+  padding: 30px;
+}
+
+.b {
+  text-align: left;
+}
+
+.b p {
+  color: #fff;
+}
+
+.rbcontent {
+  display: flex;
+  margin-bottom: 80px;
+  margin-right: 0 !important;
+  text-align: left;
+  line-height: 1.6;
+
+}
+
+.rbcontent li a {
+  color: yellow;
+  text-decoration: none;
+  transition: text-decoration 0.3s ease;
+
+}
+
+.rbcontent li a:hover {
+  text-decoration: underline dotted #F9C74F;
+  /* text-transform: uppercase; Viết in hoa */
+}
+
+.rbcontent ul {
+  list-style: none;
+  margin: 10px 10px 20px -30px;
+}
+
+.rbheader {
+  flex: 1;
+  background-color: #1F3C88;
+  padding: 30px;
+  box-sizing: border-box;
+  padding-bottom: 20px;
+
+}
+
+.rbheader a {
+  color: white;
+  text-decoration: none;
+}
